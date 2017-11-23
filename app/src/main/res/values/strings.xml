@@ -5,4 +5,25 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="recurring_types">
+        <item>Once, don\'t repeat</item>
+        <item>Daily, Repeat everyday</item>
+        <item>Weekly, Repeat same day everyweek</item>
+        <item>Montly, Repeat same day everymonth</item>
+    </string-array>
+    <string-array name="action_type">
+        <item>None</item>
+        <item>Call</item>
+        <item>Message</item>
+        <item>Mail</item>
+    </string-array>
+
+    <string-array name="silent_options">
+        <item>Auto silent phone</item>
+        <item>Allow vibration</item>
+        <item>Do not silent phone</item>
+    </string-array>
 </resources>

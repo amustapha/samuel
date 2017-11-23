@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="ng.name.amustapha.samuel.fragments.ScheduleFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/schedule_form"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/save_schedule"
+        android:layout_marginLeft="@dimen/standard"
+        android:layout_marginRight="@dimen/standard"
+        android:layout_marginTop="@dimen/quarter"
+        android:layout_marginBottom="@dimen/quarter"
+        />
+
+</LinearLayout>

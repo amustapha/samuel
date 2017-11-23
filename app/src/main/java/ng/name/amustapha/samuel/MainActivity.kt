@@ -3,6 +3,7 @@ package ng.name.amustapha.samuel
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
+import android.support.v4.app.Fragment
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
@@ -10,17 +11,23 @@ import android.view.Menu
 import android.view.MenuItem
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
+import ng.name.amustapha.samuel.fragments.ScheduleFragment
+import ng.name.amustapha.samuel.fragments.SchedulesFragment
+import ng.name.amustapha.samuel.utils.Config
+import ng.name.amustapha.samuel.utils.defaults
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
-
+    lateinit var config: Config
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
+        replace(SchedulesFragment())
+        config = Config(this)
 
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
+        if (!config.has("defaults-loaded")){
+            defaults().saveDefaults()
+            config.set("defaults-loaded", "")
         }
 
         val toggle = ActionBarDrawerToggle(
@@ -29,6 +36,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         toggle.syncState()
 
         nav_view.setNavigationItemSelectedListener(this)
+
     }
 
     override fun onBackPressed() {
@@ -39,46 +47,23 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
     }
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.main, menu)
-        return true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        when (item.itemId) {
-            R.id.action_settings -> return true
-            else -> return super.onOptionsItemSelected(item)
-        }
-    }
-
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
         when (item.itemId) {
-            R.id.nav_camera -> {
-                // Handle the camera action
+            R.id.nav_schedule -> {
+                replace(ScheduleFragment())
             }
-            R.id.nav_gallery -> {
+            R.id.nav_schedules -> {
+                replace(SchedulesFragment())
+            }
 
-            }
-            R.id.nav_slideshow -> {
-
-            }
-            R.id.nav_manage -> {
-
-            }
-            R.id.nav_share -> {
-
-            }
-            R.id.nav_send -> {
-
-            }
         }
 
         drawer_layout.closeDrawer(GravityCompat.START)
         return true
+    }
+
+    fun replace(fragment: Fragment){
+        supportFragmentManager.beginTransaction().replace(R.id.container, fragment).commit()
     }
 }

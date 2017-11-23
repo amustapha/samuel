@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="ng.name.amustapha.scheduler.FirstActivity"
+    tools:showIn="@layout/activity_first">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/aboutForm"/>
+
+    <ng.name.amustapha.scheduler.TextViewLatoBold
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_margin="16dp"
+        android:layout_gravity="center"
+        android:text="Enter appp"
+        android:id="@+id/proceed"
+        android:textColor="#fff"
+        android:background="@color/colorAccent"
+        android:textAllCaps="true"/>
+</LinearLayout>

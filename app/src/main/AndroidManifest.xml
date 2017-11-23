@@ -3,12 +3,20 @@
     package="ng.name.amustapha.samuel">
 
     <application
+        android:name="com.orm.SugarApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data
+            android:name="DATABASE"
+            android:value="sam" />
+        <meta-data
+            android:name="VERSION"
+            android:value="2" />
+
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -19,6 +27,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name=".MyIntentService"
+            android:exported="false" />
+
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
     </application>
 
 </manifest>

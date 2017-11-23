@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+    android:padding="@dimen/half" android:background="@drawable/curved_background"
+    android:layout_margin="@dimen/quarter"
+    >
+
+    <TextView
+        android:layout_width="40dp"
+        android:paddingTop="@dimen/quarter"
+        android:paddingBottom="@dimen/quarter"
+        android:id="@+id/schedule_time"
+        android:text="2AM"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:paddingTop="@dimen/quarter"
+        android:paddingBottom="@dimen/quarter"
+        android:id="@+id/schedule_title"
+        android:text="Lecture"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
