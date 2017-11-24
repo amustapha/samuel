@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".075"/>
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="72dp"
+        android:id="@+id/padlock"
+        android:src="@drawable/ic_padlock"
+        />
+    <ng.com.piper.warehouse.customviews.lato.TextViewLatoThin
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:id="@+id/message"
+        android:text="Please enter your password"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/dots"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/standard"
+            android:layout_height="@dimen/standard"
+            android:src="@drawable/pin_default"
+            android:layout_marginRight="@dimen/half"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/standard"
+            android:layout_marginRight="@dimen/half"
+            android:layout_height="@dimen/standard"
+            android:src="@drawable/pin_default"/>
+
+        <ImageView
+            android:layout_marginRight="@dimen/half"
+            android:layout_width="@dimen/standard"
+            android:layout_height="@dimen/standard"
+            android:src="@drawable/pin_default"/>
+
+        <ImageView
+            android:layout_width="@dimen/standard"
+            android:layout_height="@dimen/standard"
+            android:src="@drawable/pin_default"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".15"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:columnCount="3"
+        android:layout_marginLeft="@dimen/half"
+        android:layout_marginRight="@dimen/half"
+        android:layout_height="0dp"
+        android:layout_weight=".65">
+        <ImageView
+            android:layout_width="64dp"
+            android:id="@+id/dig_1"
+            android:padding="@dimen/standard"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_one"/>
+
+        <ImageView
+            android:layout_width="64dp"
+            android:id="@+id/dig_2"
+            android:layout_columnWeight="1"
+            android:padding="@dimen/standard"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:layout_height="64dp"
+            android:layout_rowWeight="1"
+            android:src="@drawable/ic_two"/>
+        <ImageView
+            android:layout_width="64dp"
+            android:id="@+id/dig_3"
+            android:layout_columnWeight="1"
+            android:layout_column="2"
+            android:layout_rowWeight="1"
+            android:layout_row="0"
+            android:layout_height="64dp"
+            android:padding="@dimen/standard"
+            android:src="@drawable/ic_three"/>
+
+        <ImageView
+            android:layout_width="64dp"
+            android:id="@+id/dig_4"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_row="1"
+            android:padding="@dimen/standard"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_four"/>
+
+        <ImageView
+            android:layout_width="64dp"
+            android:id="@+id/dig_5"
+            android:layout_columnWeight="1"
+            android:padding="@dimen/standard"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_five"/>
+        <ImageView
+            android:layout_width="64dp"
+            android:id="@+id/dig_6"
+            android:layout_columnWeight="1"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:layout_height="64dp"
+            android:padding="@dimen/standard"
+            android:layout_rowWeight="1"
+            android:src="@drawable/ic_six"/>
+        <ImageView
+            android:layout_width="64dp"
+            android:id="@+id/dig_7"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:padding="@dimen/standard"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_seven"/>
+
+        <ImageView
+            android:padding="@dimen/standard"
+            android:layout_width="64dp"
+            android:id="@+id/dig_8"
+            android:layout_columnWeight="1"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_eight"/>
+        <ImageView
+            android:layout_width="64dp"
+            android:id="@+id/dig_9"
+            android:layout_columnWeight="1"
+            android:padding="@dimen/standard"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_nine"/>
+
+
+        <ImageView
+            android:layout_width="64dp"
+            android:padding="@dimen/standard"
+            android:id="@+id/dig_0"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_row="3"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_zero"/>
+
+        <ImageView
+            android:id="@+id/clr"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_row="3"
+            android:layout_rowWeight="1"
+            android:padding="@dimen/standard"
+            android:src="@drawable/ic_delete" />
+
+
+    </GridLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".025"/>
+
+</LinearLayout>
