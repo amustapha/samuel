@@ -7,21 +7,29 @@
     android:layout_height="match_parent"
     android:gravity="center"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="ng.name.amustapha.scheduler.FirstActivity"
     tools:showIn="@layout/activity_first">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="124dp"
+        android:layout_height="124dp"
+        android:id="@+id/picture"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/upload_placeholder"/>
+
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/aboutForm"/>
 
-    <ng.name.amustapha.scheduler.TextViewLatoBold
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="16dp"
         android:layout_margin="16dp"
         android:layout_gravity="center"
-        android:text="Enter appp"
+        android:text="Enter app"
         android:id="@+id/proceed"
         android:textColor="#fff"
         android:background="@color/colorAccent"

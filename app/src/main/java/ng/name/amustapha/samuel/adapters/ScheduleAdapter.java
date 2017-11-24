@@ -67,6 +67,7 @@ public class ScheduleAdapter extends RecyclerView.Adapter<ScheduleAdapter.ViewHo
                     arg.putLong("id", sch.getId());
                     frag.setArguments(arg);
                     frag.show(fm, "aa");
+
                 }
             });
         }

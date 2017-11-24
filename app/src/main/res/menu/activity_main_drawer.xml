@@ -5,17 +5,20 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_schedule"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Add schedule" />
+            android:id="@+id/nav_home"
+            android:title="Today" />
         <item
             android:id="@+id/nav_schedules"
-            android:icon="@drawable/ic_menu_gallery"
             android:title="Schedules" />
         <item
+            android:id="@+id/nav_schedule"
+            android:title="Add schedule" />
+        <item
             android:id="@+id/nav_category"
-            android:icon="@drawable/ic_menu_slideshow"
             android:title="Categories" />
+        <item
+            android:title="Add Category"
+            android:id="@+id/nav_add_category" />
     </group>
 
     <item android:title="Communicate">
@@ -23,11 +26,15 @@
             <item
                 android:id="@+id/nav_share"
                 android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:title="Share app" />
             <item
-                android:id="@+id/nav_send"
+                android:id="@+id/nav_feedback"
                 android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:title="Feedback" />
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Contact developer" />
         </menu>
     </item>
 

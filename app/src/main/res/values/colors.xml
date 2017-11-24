@@ -4,4 +4,8 @@
     <color name="colorPrimaryDark">#5D94C2</color>
     <color name="colorPrimaryLight">#ECF4F4</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="white">#fafafa</color>
+    <color name="ash">#ccc</color>
+    <color name="ash_dark">#aaa</color>
+
 </resources>

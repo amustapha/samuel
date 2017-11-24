@@ -13,6 +13,7 @@ import android.view.ViewGroup
 import android.widget.SimpleAdapter
 import android.widget.Toast
 import kotlinx.android.synthetic.main.fragment_details.*
+import ng.name.amustapha.samuel.MainActivity
 
 import ng.name.amustapha.samuel.R
 import ng.name.amustapha.samuel.databases.Category
@@ -54,11 +55,14 @@ class DetailsFragment : DialogFragment() {
         information.adapter = adapter
 
         edit_schedule.setOnClickListener({
-            var schedulFrag = ScheduleFragment()
+            val schedulFrag = ScheduleFragment()
             val args = Bundle()
             args.putLong("id",  schedule.id)
             schedulFrag.arguments  = args
             fragmentManager?.beginTransaction()?.replace(R.id.container, schedulFrag)?.commit()
+            dialog.dismiss()
+            (activity as MainActivity).softReplace(SchedulesFragment())
+
         })
 
         delete_schedule.setOnClickListener({
@@ -68,6 +72,7 @@ class DetailsFragment : DialogFragment() {
                     .setPositiveButton("Delete", DialogInterface.OnClickListener { dialogInterface1, i1 ->
                         schedule.delete()
                         Toast.makeText(context, "Schedule successfully deleted", Toast.LENGTH_LONG).show()
+                        dialog.dismiss()
                     })
                     .setNegativeButton("Cancel", DialogInterface.OnClickListener { dialogInterface1, i1 -> /*do nothing */ })
                     .show()
@@ -76,8 +81,8 @@ class DetailsFragment : DialogFragment() {
 
     fun map(key:String, value:String): Map<String, String>{
         val hashMap : HashMap<String, String> = HashMap()
-        hashMap.put(key, key)
-        hashMap.put(value, value)
+        hashMap.put("key", key)
+        hashMap.put("value", value)
         return hashMap
     }
 

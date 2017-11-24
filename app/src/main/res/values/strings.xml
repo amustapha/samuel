@@ -26,4 +26,13 @@
         <item>Allow vibration</item>
         <item>Do not silent phone</item>
     </string-array>
+
+    <string name="pin_error">Incorrect pin. Please try again</string>
+    <string name="pin_error_unequal">Both pin you just enterred do not match. Please try again</string>
+    <string name="pin_confirm">Please confirm your pin</string>
+    <string name="pin_set">Password has been set</string>
+    <string name="pin_success">Pin correct. Login authorized</string>
+    <string name="pin_prompt">Please choose a new password for your security</string>
+    <string name="title_activity_auth">AuthActivity</string>
+
 </resources>

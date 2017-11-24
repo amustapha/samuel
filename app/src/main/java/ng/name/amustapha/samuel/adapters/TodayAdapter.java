@@ -18,10 +18,10 @@ import ng.name.amustapha.samuel.fragments.DetailsFragment;
  * Created by amustapha on 9/22/17.
  */
 
-public class ScheduleAdapter extends RecyclerView.Adapter<ScheduleAdapter.ViewHolder>{
+public class TodayAdapter extends RecyclerView.Adapter<TodayAdapter.ViewHolder>{
     List<Schedule> dataList;
     FragmentManager fm;
-    public ScheduleAdapter(FragmentManager fm){
+    public TodayAdapter(FragmentManager fm, int dom, int dow){
         this.fm = fm;
         dataList = Schedule.find(Schedule.class, null, null);
 //        dataList = Lists.newArrayList(Schedule.find(Schedule.class, String.format(" DAY_OF_WEEK = ? AND TIME_OF_DAY %s ? ",  check), dow, hod));

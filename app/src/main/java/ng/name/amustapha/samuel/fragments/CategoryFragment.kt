@@ -4,18 +4,21 @@ package ng.name.amustapha.samuel.fragments
 import android.app.AlertDialog
 import android.content.DialogInterface
 import android.os.Bundle
+import android.support.v4.app.DialogFragment
 import android.support.v4.app.Fragment
 import android.support.v4.view.accessibility.AccessibilityEventCompat.setAction
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import junit.framework.Test
 import kotlinx.android.synthetic.main.fragment_add_schedule.*
 import kotlinx.android.synthetic.main.fragment_category.*
 import me.riddhimanadib.formmaster.FormBuilder
 import me.riddhimanadib.formmaster.model.*
 import me.riddhimanadib.formmaster.viewholder.FormElementHeader
+import ng.name.amustapha.samuel.MainActivity
 
 import ng.name.amustapha.samuel.R
 import ng.name.amustapha.samuel.R.id.save_schedule
@@ -28,7 +31,7 @@ import ng.name.amustapha.samuel.utils.Hack
 /**
  * A simple [Fragment] subclass.
  */
-class CategoryFragment : Fragment() {
+class CategoryFragment : DialogFragment() {
 
     var category = Category()
 
@@ -59,17 +62,23 @@ class CategoryFragment : Fragment() {
 
         if(category.name != null)
         {
-            name.setValue(category.name)
+            name.value = category.name
             description.value = category.description
         }
 
         save_schedule.setOnClickListener({
-            category = Category(name.value, description.value)
+            category.setName(name.value)
+                    .setDescription(description.value)
             category.save()
+            dialog.dismiss()
+            Toast.makeText(dialog.context, "Category was successfully saved", Toast.LENGTH_LONG).show()
         })
 
 
     }
 
-
+    override fun onDismiss(dialog: DialogInterface?) {
+        super.onDismiss(dialog)
+        (activity as MainActivity).softReplace(CategoriesFragment())
+    }
 }// Required empty public constructor

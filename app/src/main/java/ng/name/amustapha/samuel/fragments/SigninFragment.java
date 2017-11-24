@@ -1,5 +1,6 @@
-package ng.com.piper.warehouse.fragment;
+package ng.name.amustapha.samuel.fragments;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -13,10 +14,11 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import ng.com.piper.warehouse.R;
-import ng.com.piper.warehouse.utilities.Constants;
-import ng.com.piper.warehouse.utilities.Preferences;
+import java.util.prefs.Preferences;
 
+import ng.name.amustapha.samuel.MainActivity;
+import ng.name.amustapha.samuel.R;
+import ng.name.amustapha.samuel.utils.Config;
 
 public class SigninFragment extends Fragment implements View.OnClickListener{
     View view;
@@ -25,7 +27,7 @@ public class SigninFragment extends Fragment implements View.OnClickListener{
     ImageView padlock;
     TextView message;
     boolean reject = false;
-
+    Config config;
     public SigninFragment() {}
 
     public static SigninFragment newInstance(int target) {
@@ -98,6 +100,7 @@ public class SigninFragment extends Fragment implements View.OnClickListener{
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        config = new Config(getContext());
         this.view = view;
         setListeners(R.id.dig_0, R.id.dig_1, R.id.dig_2, R.id.dig_3, R.id.dig_4, R.id.dig_5, R.id.dig_6, R.id.dig_7, R.id.dig_8, R.id.dig_9, R.id.dig_0, R.id.clr);
         dots = view.findViewById(R.id.dots);
@@ -123,12 +126,16 @@ public class SigninFragment extends Fragment implements View.OnClickListener{
 
     public void verify(){
         reject = true;
-        if(pin.equals(Preferences.getInstance(view.getContext()).get("password"))){
+        if(pin.equals(config.get("password"))){
             padlock.setImageResource(R.drawable.ic_unlock);
             message.setText(R.string.pin_success);
             message.setTextColor(Color.GREEN);
+            Intent intent = new Intent(getActivity(), MainActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
             getActivity().overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
-            Constants.getAction(getArguments().getInt("target"), view.getContext(), getFragmentManager()).run();
+
         }else{
             Animation anim = AnimationUtils.loadAnimation(view.getContext(), R.anim.shake);
             anim.setAnimationListener(new Animation.AnimationListener() {

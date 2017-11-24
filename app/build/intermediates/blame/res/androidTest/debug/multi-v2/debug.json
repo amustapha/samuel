@@ -214,6 +214,22 @@
             ]
         },
         {
+            "outputFile": "/home/amustapha/AndroidStudioProjects/Samuel/app/build/intermediates/res/merged/androidTest/debug/values-v25_values-v25.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/amustapha/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.1.aar/820f177c54cc4d9ff38dfd3372227b84/res/values-v25/values-v25.xml",
+                    "from": {
+                        "startLines": "2,3,4,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,126,209,308",
+                        "endLines": "2,3,5,7",
+                        "endColumns": "70,82,12,12",
+                        "endOffsets": "121,204,303,414"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "/home/amustapha/AndroidStudioProjects/Samuel/app/build/intermediates/res/merged/androidTest/debug/values-uz_values-uz.arsc.flat",
             "map": [
                 {
@@ -241,22 +257,6 @@
                         "startOffsets": "105,210,314,428,514,625,741,821,900,984,1093,1200,1301,1409,1514,1621,1782,1881",
                         "endColumns": "104,103,113,85,110,115,79,78,83,108,106,100,107,104,106,160,98,83",
                         "endOffsets": "205,309,423,509,620,736,816,895,979,1088,1195,1296,1404,1509,1616,1777,1876,1960"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/home/amustapha/AndroidStudioProjects/Samuel/app/build/intermediates/res/merged/androidTest/debug/values-v25_values-v25.arsc.flat",
-            "map": [
-                {
-                    "source": "/home/amustapha/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.1.aar/820f177c54cc4d9ff38dfd3372227b84/res/values-v25/values-v25.xml",
-                    "from": {
-                        "startLines": "2,3,4,6",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,126,209,308",
-                        "endLines": "2,3,5,7",
-                        "endColumns": "70,82,12,12",
-                        "endOffsets": "121,204,303,414"
                     }
                 }
             ]
@@ -1128,38 +1128,6 @@
             ]
         },
         {
-            "outputFile": "/home/amustapha/AndroidStudioProjects/Samuel/app/build/intermediates/res/merged/androidTest/debug/values-it_values-it.arsc.flat",
-            "map": [
-                {
-                    "source": "/home/amustapha/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.1.aar/820f177c54cc4d9ff38dfd3372227b84/res/values-it/values-it.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,214,314,423,507,616,741,818,894,975,1081,1189,1287,1391,1496,1603,1766,1866",
-                        "endColumns": "108,99,108,83,108,124,76,75,80,105,107,97,103,104,106,162,99,82",
-                        "endOffsets": "209,309,418,502,611,736,813,889,970,1076,1184,1282,1386,1491,1598,1761,1861,1944"
-                    }
-                },
-                {
-                    "source": "/home/amustapha/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.1.aar/2e16b62cbba47f172b90c0c41f643aea/res/values-it/values-it.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1949",
-                        "endColumns": "100",
-                        "endOffsets": "2045"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/home/amustapha/AndroidStudioProjects/Samuel/app/build/intermediates/res/merged/androidTest/debug/values-ky_values-ky.arsc.flat",
             "map": [
                 {
@@ -1187,6 +1155,38 @@
                         "startOffsets": "1943",
                         "endColumns": "100",
                         "endOffsets": "2039"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/amustapha/AndroidStudioProjects/Samuel/app/build/intermediates/res/merged/androidTest/debug/values-it_values-it.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/amustapha/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.1.aar/820f177c54cc4d9ff38dfd3372227b84/res/values-it/values-it.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,214,314,423,507,616,741,818,894,975,1081,1189,1287,1391,1496,1603,1766,1866",
+                        "endColumns": "108,99,108,83,108,124,76,75,80,105,107,97,103,104,106,162,99,82",
+                        "endOffsets": "209,309,418,502,611,736,813,889,970,1076,1184,1282,1386,1491,1598,1761,1861,1944"
+                    }
+                },
+                {
+                    "source": "/home/amustapha/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.1.aar/2e16b62cbba47f172b90c0c41f643aea/res/values-it/values-it.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "1949",
+                        "endColumns": "100",
+                        "endOffsets": "2045"
                     }
                 }
             ]

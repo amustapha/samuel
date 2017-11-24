@@ -1,6 +1,8 @@
 package ng.name.amustapha.samuel.fragments
 
 
+import android.app.AlertDialog
+import android.content.DialogInterface
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v4.view.accessibility.AccessibilityEventCompat.setAction
@@ -13,6 +15,7 @@ import kotlinx.android.synthetic.main.fragment_add_schedule.*
 import me.riddhimanadib.formmaster.FormBuilder
 import me.riddhimanadib.formmaster.model.*
 import me.riddhimanadib.formmaster.viewholder.FormElementHeader
+import ng.name.amustapha.samuel.MainActivity
 
 import ng.name.amustapha.samuel.R
 import ng.name.amustapha.samuel.databases.Category
@@ -74,15 +77,23 @@ class ScheduleFragment : Fragment() {
         }
 
         save_schedule.setOnClickListener({
-            val schedule = Schedule().setCategory(category.value).setTitle(title.value).setStartTime(startTime.value)
+            schedule.setCategory(category.value).setTitle(title.value).setStartTime(startTime.value)
                     .setRecurring(Hack.listFromResource(context, R.array.recurring_types).indexOf(repeating.value))
                     .setActionType(Hack.listFromResource(context, R.array.action_type).indexOf(silent.value))
                     .setSilent(Hack.listFromResource(context, R.array.silent_options).indexOf(silent.value))
                     .setStopTime(endtime.value).setDate(date.value).setAction(action.value)
 
                 schedule.save()
+            AlertDialog.Builder(context)
+                    .setTitle("Check")
+                    .setMessage("Do you want to check your schedueles?")
+                    .setPositiveButton("Check", DialogInterface.OnClickListener { dialogInterface, i -> (activity as MainActivity).replace(SchedulesFragment()) })
+                    .setNegativeButton("Continue editing", DialogInterface.OnClickListener { dialogInterface, i ->  })
+                    .show()
         })
     }
+
+
 
 
 }// Required empty public constructor

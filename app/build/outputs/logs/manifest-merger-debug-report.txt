@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:2:1-41:12
-INJECTED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:2:1-41:12
-INJECTED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:2:1-41:12
-INJECTED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:2:1-41:12
+ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:2:1-52:12
+INJECTED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:2:1-52:12
+INJECTED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:2:1-52:12
+INJECTED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:2:1-52:12
 MERGED from [com.android.support:design:27.0.1] /home/amustapha/.gradle/caches/transforms-1/files-1.1/design-27.0.1.aar/e42b91a02c5753c91bb318d5eafeeb82/AndroidManifest.xml:17:1-22:12
 MERGED from [me.riddhimanadib.form-master:form-master:1.1.0] /home/amustapha/.gradle/caches/transforms-1/files-1.1/form-master-1.1.0.aar/c9fb9649bf5934dbb1a5c760daa1037b/AndroidManifest.xml:2:1-17:12
 MERGED from [com.android.support:appcompat-v7:27.0.1] /home/amustapha/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.1.aar/820f177c54cc4d9ff38dfd3372227b84/AndroidManifest.xml:17:1-22:12
@@ -21,25 +21,29 @@ MERGED from [com.android.support:support-core-ui:27.0.1] /home/amustapha/.gradle
 MERGED from [com.android.support:support-vector-drawable:27.0.1] /home/amustapha/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.1.aar/02edb001d06f90a0595dc5e7c69b54a0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:27.0.1] /home/amustapha/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.1.aar/2e16b62cbba47f172b90c0c41f643aea/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/amustapha/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/f431ea15c4e74aeccf7cca860724d921/AndroidManifest.xml:17:1-30:12
-INJECTED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:2:1-41:12
-INJECTED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:2:1-41:12
-INJECTED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:2:1-52:12
+INJECTED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:2:1-52:12
+INJECTED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:2:1-52:12
 	package
 		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:3:5-39
 		INJECTED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml
 		INJECTED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml
-		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:2:1-41:12
+		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:2:1-52:12
 		INJECTED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml
-		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:2:1-41:12
+		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:2:1-52:12
 		INJECTED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:5:5-81
+	android:name
+		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:5:22-78
 application
-ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:5:5-39:19
+ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:7:5-50:19
 MERGED from [me.riddhimanadib.form-master:form-master:1.1.0] /home/amustapha/.gradle/caches/transforms-1/files-1.1/form-master-1.1.0.aar/c9fb9649bf5934dbb1a5c760daa1037b/AndroidManifest.xml:11:5-15:19
 MERGED from [me.riddhimanadib.form-master:form-master:1.1.0] /home/amustapha/.gradle/caches/transforms-1/files-1.1/form-master-1.1.0.aar/c9fb9649bf5934dbb1a5c760daa1037b/AndroidManifest.xml:11:5-15:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/amustapha/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/55c7b6d159af984ae3f475eb9f814a59/AndroidManifest.xml:9:5-20
@@ -49,63 +53,79 @@ MERGED from [de.hdodenhof:circleimageview:2.1.0] /home/amustapha/.gradle/caches/
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/amustapha/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/f431ea15c4e74aeccf7cca860724d921/AndroidManifest.xml:24:5-28:19
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/amustapha/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/f431ea15c4e74aeccf7cca860724d921/AndroidManifest.xml:24:5-28:19
 	android:supportsRtl
-		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:11:9-35
+		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:9:9-41
+		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:11:9-41
 	android:roundIcon
-		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:10:9-54
+		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:12:9-54
 	android:icon
-		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:8:9-43
+		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:10:9-43
 	android:allowBackup
-		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:7:9-35
+		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:12:9-40
+		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:14:9-40
 	android:name
-		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:6:9-40
+		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:8:9-40
 meta-data#DATABASE
-ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:13:9-15:35
+ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:15:9-17:35
 	android:value
-		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:15:13-32
+		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:17:13-32
 	android:name
-		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:14:13-36
+		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:16:13-36
 meta-data#VERSION
-ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:16:9-18:33
+ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:18:9-20:33
 	android:value
-		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:18:13-30
+		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:20:13-30
 	android:name
-		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:17:13-35
+		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:19:13-35
 activity#ng.name.amustapha.samuel.MainActivity
-ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:20:9-29:20
+ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:22:9-25:68
 	android:label
-		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:22:13-45
+		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:24:13-45
 	android:theme
-		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:23:13-56
+		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:25:13-56
 	android:name
-		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:21:13-41
+		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:23:13-41
+activity#ng.name.amustapha.samuel.FirstActivity
+ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:26:9-35:20
+	android:label
+		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:28:13-45
+	android:theme
+		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:29:13-56
+	android:name
+		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:27:13-42
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:24:13-28:29
+ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:30:13-34:29
 action#android.intent.action.MAIN
-ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:25:17-69
+ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:31:17-69
 	android:name
-		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:25:25-66
+		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:31:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:27:17-77
+ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:33:17-77
 	android:name
-		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:27:27-74
+		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:33:27-74
 service#ng.name.amustapha.samuel.MyIntentService
-ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:31:9-33:40
+ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:37:9-39:40
 	android:exported
-		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:33:13-37
+		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:39:13-37
 	android:name
-		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:32:13-44
+		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:38:13-44
 receiver#ng.name.amustapha.samuel.MyReceiver
-ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:35:9-38:48
+ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:41:9-44:39
 	android:enabled
-		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:37:13-35
+		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:43:13-35
 	android:exported
-		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:38:13-36
+		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:44:13-36
 	android:name
-		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:36:13-39
+		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:42:13-39
+activity#ng.name.amustapha.samuel.AuthActivity
+ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:46:9-49:68
+	android:label
+		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:48:13-56
+	android:theme
+		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:49:13-56
+	android:name
+		ADDED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml:47:13-41
 uses-sdk
 INJECTED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/amustapha/AndroidStudioProjects/Samuel/app/src/main/AndroidManifest.xml

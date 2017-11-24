@@ -13,13 +13,16 @@ import ng.name.amustapha.samuel.R
 /**
  * A simple [Fragment] subclass.
  */
-class BlankFragment : Fragment() {
+class TodayFragment : Fragment() {
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_blank, container, false)
+        return inflater.inflate(R.layout.fragment_schedules, container, false)
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+    }
 }// Required empty public constructor

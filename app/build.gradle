@@ -36,5 +36,4 @@ dependencies {
     implementation 'com.android.support:recyclerview-v7:27.0.1'
     implementation 'me.riddhimanadib.form-master:form-master:1.1.0'
     implementation 'de.hdodenhof:circleimageview:2.1.0'
-    implementation 'de.hdodenhof:circleimageview:2.1.0'
 }

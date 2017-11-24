@@ -1,4 +1,4 @@
-package ng.com.piper.warehouse.fragment;
+package ng.name.amustapha.samuel.fragments;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -13,9 +13,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import ng.com.piper.warehouse.R;
-import ng.com.piper.warehouse.utilities.Constants;
-import ng.com.piper.warehouse.utilities.Preferences;
+import java.util.prefs.Preferences;
+
+import ng.name.amustapha.samuel.R;
+import ng.name.amustapha.samuel.utils.Config;
 
 
 public class SetPasswordFragment extends Fragment implements View.OnClickListener{
@@ -26,6 +27,7 @@ public class SetPasswordFragment extends Fragment implements View.OnClickListene
     ImageView padlock;
     TextView message;
     boolean reject = false;
+    Config config;
 
     public SetPasswordFragment() {}
 
@@ -105,7 +107,7 @@ public class SetPasswordFragment extends Fragment implements View.OnClickListene
         padlock = view.findViewById(R.id.padlock);
         message = view.findViewById(R.id.message);
         message.setText(R.string.pin_prompt);
-
+        config = new Config(getContext());
     }
 
     public void add(int n){
@@ -138,9 +140,7 @@ public class SetPasswordFragment extends Fragment implements View.OnClickListene
             padlock.setImageResource(R.drawable.ic_unlock);
             message.setText(R.string.pin_set);
             message.setTextColor(Color.GREEN);
-            Preferences.getInstance(getContext()).set("password", pin[0]);
-            getActivity().overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
-            Constants.getAction(getArguments().getInt("target"), view.getContext(), getFragmentManager()).run();
+            config.set("password", pin[0]);
 
         }else{
             Animation anim = AnimationUtils.loadAnimation(view.getContext(), R.anim.shake);
