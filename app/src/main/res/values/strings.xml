@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Samuel</string>
+    <string name="app_name">SAPA</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -12,7 +12,7 @@
         <item>Once, don\'t repeat</item>
         <item>Daily, Repeat everyday</item>
         <item>Weekly, Repeat same day everyweek</item>
-        <item>Montly, Repeat same day everymonth</item>
+        <item>Monthly, Repeat same day everymonth</item>
     </string-array>
     <string-array name="action_type">
         <item>None</item>

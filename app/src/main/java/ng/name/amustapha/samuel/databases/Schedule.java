@@ -4,6 +4,7 @@ import com.orm.SugarRecord;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -59,7 +60,10 @@ public class Schedule extends SugarRecord {
         SimpleDateFormat format = new SimpleDateFormat("d MMMM, y");
         try{
             this.date = format.parse(date);
-
+            Calendar cal = Calendar.getInstance();
+            cal.setTime(this.date);
+            dow = cal.get(Calendar.DAY_OF_WEEK);
+            dom = cal.get(Calendar.DAY_OF_MONTH);
         } catch (ParseException e) {
             e.printStackTrace();
         }

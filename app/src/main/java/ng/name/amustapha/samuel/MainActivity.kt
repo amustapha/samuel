@@ -72,20 +72,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 frag.show(supportFragmentManager, "n")
             }
             R.id.nav_contact -> {
-                val intent = Intent(Intent.ACTION_SEND)
-                intent.type = "text/plain"
-                intent.putExtra(android.content.Intent.EXTRA_EMAIL, arrayOf("Samuel Noah <samexine@gmail.com>"))
-                intent.putExtra(Intent.EXTRA_SUBJECT, "About Schedule")
-
-                val pm = packageManager
-                val matches = pm.queryIntentActivities(intent, 0)
-                var best: ResolveInfo? = null
-                for (info in matches)
-                    if (info.activityInfo.packageName.endsWith(".gm") || info.activityInfo.name.toLowerCase().contains("gmail"))
-                        best = info
-                if (best != null)
-                    intent.setClassName(best.activityInfo.packageName, best.activityInfo.name)
-                startActivity(intent)
+                replace(ContactFragment())
             }
             R.id.nav_feedback ->{
                 val intent = Intent(Intent.ACTION_SEND)

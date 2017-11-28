@@ -18,7 +18,7 @@
         android:id="@+id/padlock"
         android:src="@drawable/ic_padlock"
         />
-    <ng.com.piper.warehouse.customviews.lato.TextViewLatoThin
+    <TextView
         android:layout_width="wrap_content"
         android:gravity="center"
         android:id="@+id/message"
