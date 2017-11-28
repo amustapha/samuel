@@ -15,9 +15,9 @@ public class Schedule extends SugarRecord {
     public String title;
     public Date date;
     public int silent;
-    public int startHour, startMinute, stopHour, stopMinute, recurring, actionType;
+    public int startHour, startMinute, stopHour, stopMinute, recurring;
     public int dow, dom;
-    public String action;
+    public String location;
     public Category category;
 
     public Schedule() {
@@ -149,8 +149,7 @@ public class Schedule extends SugarRecord {
                 ", stopHour=" + stopHour +
                 ", stopMinute=" + stopMinute +
                 ", recurring=" + recurring +
-                ", actionType=" + actionType +
-                ", action='" + action + '\'' +
+                ", location='" + location + '\'' +
                 ", category=" + category +
                 '}';
     }
@@ -164,21 +163,13 @@ public class Schedule extends SugarRecord {
         return this;
     }
 
-    public int getActionType() {
-        return actionType;
+
+    public String getLocation() {
+        return location;
     }
 
-    public Schedule setActionType(int actionType) {
-        this.actionType = actionType;
-        return this;
-    }
-
-    public String getAction() {
-        return action;
-    }
-
-    public Schedule setAction(String action) {
-        this.action = action;
+    public Schedule setLocation(String action) {
+        this.location = action;
         return this;
     }
 }

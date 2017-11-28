@@ -58,11 +58,10 @@ class ScheduleFragment : Fragment() {
         val endtime = FormElementPickerTime.createInstance().setTimeFormat("hh:mm aa").setTitle("End time").setHint("What time does this activity end")
         val repeating = FormElementPickerSingle.createInstance().setTitle("Recurring").setHint("Repeat activity?").setOptions(Hack.listFromResource(context, R.array.recurring_types))
         val silent = FormElementPickerSingle.createInstance().setTitle("Silent?").setHint("Silent phone").setOptions(Hack.listFromResource(context, R.array.silent_options))
-        val actionType = FormElementPickerSingle.createInstance().setTitle("Action type").setHint("Action to perform").setOptions(Hack.listFromResource(context, R.array.action_type))
-        val action = FormElementTextSingleLine.createInstance().setTitle("Action").setHint("Phone or email")
+        val location = FormElementTextSingleLine.createInstance().setTitle("Venue").setHint("Where")
 
         val formFields = ArrayList<BaseFormElement>()
-        formFields.addAll(arrayOf( category, title, date, startTime, endtime, repeating, silent, actionType, action))
+        formFields.addAll(arrayOf( category, title, date, startTime, endtime, repeating, silent, location))
         formBuilder.addFormElements(formFields)
 
         if(schedule.title != null)
@@ -79,9 +78,8 @@ class ScheduleFragment : Fragment() {
         save_schedule.setOnClickListener({
             schedule.setCategory(category.value).setTitle(title.value).setStartTime(startTime.value)
                     .setRecurring(Hack.listFromResource(context, R.array.recurring_types).indexOf(repeating.value))
-                    .setActionType(Hack.listFromResource(context, R.array.action_type).indexOf(silent.value))
                     .setSilent(Hack.listFromResource(context, R.array.silent_options).indexOf(silent.value))
-                    .setStopTime(endtime.value).setDate(date.value).setAction(action.value)
+                    .setStopTime(endtime.value).setDate(date.value).setLocation(location.value)
 
                 schedule.save()
             AlertDialog.Builder(context)

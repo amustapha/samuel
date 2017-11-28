@@ -61,6 +61,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.nav_schedule -> {
                 replace(ScheduleFragment())
             }
+
+            R.id.nav_home ->{
+                replace(TodayFragment())
+            }
             R.id.nav_schedules -> {
                 replace(SchedulesFragment())
             }
