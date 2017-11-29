@@ -8,7 +8,7 @@
     >
 
     <TextView
-        android:layout_width="40dp"
+        android:layout_width="48dp"
         android:paddingTop="@dimen/quarter"
         android:paddingBottom="@dimen/quarter"
         android:id="@+id/schedule_time"

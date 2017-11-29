@@ -13,6 +13,7 @@ import java.util.List;
 import ng.name.amustapha.samuel.R;
 import ng.name.amustapha.samuel.databases.Schedule;
 import ng.name.amustapha.samuel.fragments.DetailsFragment;
+import ng.name.amustapha.samuel.utils.Hack;
 
 /**
  * Created by amustapha on 9/22/17.
@@ -56,7 +57,7 @@ public class ScheduleAdapter extends RecyclerView.Adapter<ScheduleAdapter.ViewHo
         }
 
         public void inflate(final Schedule sch){
-            schedule_time.setText(sch.startHour + "");
+            schedule_time.setText(Hack.time(sch.startHour, sch.startMinute));
             schedule_title.setText(sch.title);
 
             itemView.setOnClickListener(new View.OnClickListener() {

@@ -12,6 +12,7 @@ import android.app.NotificationManager
 import android.support.v4.app.TaskStackBuilder
 import android.util.Log
 import android.widget.Toast
+import ng.name.amustapha.samuel.R.id.schedules
 
 
 class MyReceiver : BroadcastReceiver() {
@@ -27,7 +28,7 @@ class MyReceiver : BroadcastReceiver() {
         alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), 60000,
                 pendingIntent)
         val cal = Calendar.getInstance()
-        val schedules = Schedule.find(Schedule::class.java, " (DOW = ? OR DAY = ? ) AND START_HOUR =? AND START_MINUTE = ? ", cal.get(Calendar.DAY_OF_WEEK).toString(), cal.get(Calendar.DAY_OF_MONTH).toString(), cal.get(Calendar.HOUR_OF_DAY).toString(), cal.get(Calendar.MINUTE).toString())
+        val schedules = Schedule.find(Schedule::class.java, " (DOW = ? OR DAY = ? ) -- AND START_HOUR =? AND START_MINUTE = ? ", cal.get(Calendar.DAY_OF_WEEK).toString(), cal.get(Calendar.DAY_OF_MONTH).toString())//, cal.get(Calendar.HOUR_OF_DAY).toString(), cal.get(Calendar.MINUTE).toString())
         if (schedules.size > 0){
             val mBuilder = NotificationCompat.Builder(context)
             mBuilder.setSmallIcon(R.drawable.graduate);
@@ -46,8 +47,8 @@ class MyReceiver : BroadcastReceiver() {
 
 // notificationID allows you to update the notification later on.
             mNotificationManager.notify(0, mBuilder.build())
-            Toast.makeText(context, "notify", Toast.LENGTH_LONG).show();
 
+            Toast.makeText(context, "notify", Toast.LENGTH_LONG).show();
         }
         else{
             Toast.makeText(context, "notify", Toast.LENGTH_LONG).show();

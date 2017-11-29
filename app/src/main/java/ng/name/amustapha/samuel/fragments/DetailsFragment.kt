@@ -72,6 +72,7 @@ class DetailsFragment : DialogFragment() {
                     .setPositiveButton("Delete", DialogInterface.OnClickListener { dialogInterface1, i1 ->
                         schedule.delete()
                         Toast.makeText(context, "Schedule successfully deleted", Toast.LENGTH_LONG).show()
+                        (activity as MainActivity).softReplace(TodayFragment())
                         dialog.dismiss()
                     })
                     .setNegativeButton("Cancel", DialogInterface.OnClickListener { dialogInterface1, i1 -> /*do nothing */ })

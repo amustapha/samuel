@@ -58,12 +58,10 @@
             android:label="@string/title_activity_auth"
             android:theme="@style/AppTheme.NoActionBar" />
 
-        <receiver
-            android:name="ng.name.amustapha.samuel.utils.MyReceiver"
-            android:enabled="true"
-            android:exported="true" >
+        <receiver android:name="ng.name.amustapha.samuel.utils.MyReceiver" >
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="ng.name.amustapha.samuel.utils.MyReceiver" />
             </intent-filter>
         </receiver>
 

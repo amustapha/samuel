@@ -54,10 +54,10 @@
 
         <receiver
             android:name=".utils.MyReceiver"
-            android:enabled="true"
-            android:exported="true">
+            >
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="ng.name.amustapha.samuel.utils.MyReceiver" />
             </intent-filter>
         </receiver>
     </application>

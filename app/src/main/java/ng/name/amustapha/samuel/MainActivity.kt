@@ -53,10 +53,12 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         Log.e("MINUTES", "" + cal.get(Calendar.MINUTE))
 
 
-        val intent = Intent(Context.ALARM_SERVICE)
+        val intent = Intent()
+        intent.action = "ng.name.amustapha.samuel.utils.MyReceiver"
         sendBroadcast(intent)
 
-
+        val serve = Intent(this, MyIntentService::class.java);
+        startService(serve);
     }
 
     override fun onBackPressed() {
