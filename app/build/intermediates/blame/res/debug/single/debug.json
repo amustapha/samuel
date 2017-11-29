@@ -52,12 +52,12 @@
         "source": "/home/amustapha/AndroidStudioProjects/Samuel/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_unlock.png"
     },
     {
-        "merged": "/home/amustapha/AndroidStudioProjects/Samuel/app/build/intermediates/res/merged/debug/color_abc_hint_foreground_material_light.xml.flat",
-        "source": "/home/amustapha/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.1.aar/820f177c54cc4d9ff38dfd3372227b84/res/color/abc_hint_foreground_material_light.xml"
-    },
-    {
         "merged": "/home/amustapha/AndroidStudioProjects/Samuel/app/build/intermediates/res/merged/debug/drawable_twitter.png.flat",
         "source": "/home/amustapha/AndroidStudioProjects/Samuel/app/src/main/res/drawable/twitter.png"
+    },
+    {
+        "merged": "/home/amustapha/AndroidStudioProjects/Samuel/app/build/intermediates/res/merged/debug/color_abc_hint_foreground_material_light.xml.flat",
+        "source": "/home/amustapha/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.1.aar/820f177c54cc4d9ff38dfd3372227b84/res/color/abc_hint_foreground_material_light.xml"
     },
     {
         "merged": "/home/amustapha/AndroidStudioProjects/Samuel/app/build/intermediates/res/merged/debug/color-v23_design_tint_password_toggle.xml.flat",
@@ -508,12 +508,16 @@
         "source": "/home/amustapha/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.1.aar/2e16b62cbba47f172b90c0c41f643aea/res/layout-v21/notification_template_custom_big.xml"
     },
     {
+        "merged": "/home/amustapha/AndroidStudioProjects/Samuel/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_delete.png.flat",
+        "source": "/home/amustapha/AndroidStudioProjects/Samuel/app/build/generated/res/pngs/debug/drawable-mdpi/ic_delete.png"
+    },
+    {
         "merged": "/home/amustapha/AndroidStudioProjects/Samuel/app/build/intermediates/res/merged/debug/drawable_abc_ic_menu_overflow_material.xml.flat",
         "source": "/home/amustapha/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.1.aar/820f177c54cc4d9ff38dfd3372227b84/res/drawable/abc_ic_menu_overflow_material.xml"
     },
     {
-        "merged": "/home/amustapha/AndroidStudioProjects/Samuel/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_delete.png.flat",
-        "source": "/home/amustapha/AndroidStudioProjects/Samuel/app/build/generated/res/pngs/debug/drawable-mdpi/ic_delete.png"
+        "merged": "/home/amustapha/AndroidStudioProjects/Samuel/app/build/intermediates/res/merged/debug/layout_today_holder.xml.flat",
+        "source": "/home/amustapha/AndroidStudioProjects/Samuel/app/src/main/res/layout/today_holder.xml"
     },
     {
         "merged": "/home/amustapha/AndroidStudioProjects/Samuel/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_eight.png.flat",

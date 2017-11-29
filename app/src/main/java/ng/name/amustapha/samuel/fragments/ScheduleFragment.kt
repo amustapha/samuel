@@ -83,8 +83,8 @@ class ScheduleFragment : Fragment() {
 
                 schedule.save()
             AlertDialog.Builder(context)
-                    .setTitle("Check")
-                    .setMessage("Do you want to check your schedueles?")
+                    .setTitle("Saved")
+                    .setMessage("Entries have been saved! Do you want to check your schedueles?")
                     .setPositiveButton("Check", DialogInterface.OnClickListener { dialogInterface, i -> (activity as MainActivity).replace(SchedulesFragment()) })
                     .setNegativeButton("Continue editing", DialogInterface.OnClickListener { dialogInterface, i ->  })
                     .show()

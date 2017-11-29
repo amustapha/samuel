@@ -16,7 +16,7 @@ public class Schedule extends SugarRecord {
     public Date date;
     public int silent;
     public int startHour, startMinute, stopHour, stopMinute, recurring;
-    public int dow, dom;
+    public int dow, day, month;
     public String location;
     public Category category;
 
@@ -63,7 +63,8 @@ public class Schedule extends SugarRecord {
             Calendar cal = Calendar.getInstance();
             cal.setTime(this.date);
             dow = cal.get(Calendar.DAY_OF_WEEK);
-            dom = cal.get(Calendar.DAY_OF_MONTH);
+            day = cal.get(Calendar.DAY_OF_MONTH);
+            month = cal.get(Calendar.MONTH);
         } catch (ParseException e) {
             e.printStackTrace();
         }

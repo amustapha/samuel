@@ -3,6 +3,8 @@
     package="ng.name.amustapha.samuel">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:name="com.orm.SugarApp"
@@ -12,9 +14,11 @@
         android:roundIcon="@drawable/graduate"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <meta-data
             android:name="DATABASE"
             android:value="sam" />
+
         <meta-data
             android:name="VERSION"
             android:value="2" />
@@ -50,8 +54,12 @@
 
         <receiver
             android:name=".utils.MyReceiver"
-            android:enabled="false"
-            android:exported="false"></receiver>
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

@@ -1,5 +1,6 @@
 package ng.name.amustapha.samuel
 
+import android.content.Context
 import android.content.Intent
 import android.content.pm.ResolveInfo
 import android.os.Bundle
@@ -9,6 +10,7 @@ import android.support.v4.app.Fragment
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.ImageView
@@ -19,6 +21,7 @@ import kotlinx.android.synthetic.main.app_bar_main.*
 import ng.name.amustapha.samuel.fragments.*
 import ng.name.amustapha.samuel.utils.Config
 import ng.name.amustapha.samuel.utils.defaults
+import java.util.*
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
     lateinit var config: Config
@@ -43,6 +46,15 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         (nav_view.getHeaderView(0).findViewById<CircleImageView>(R.id.imageView)).setImageBitmap(config.getPicture())
         (nav_view.getHeaderView(0).findViewById<TextView>(R.id.main)).setText(config.get("name"))
         (nav_view.getHeaderView(0).findViewById<TextView>(R.id.sub)).setText(config.get("email"))
+
+        val cal = Calendar.getInstance()
+        Log.e("MILLISECONDS", "" + cal.get(Calendar.MILLISECOND))
+        Log.e("SECONDS", "" + cal.get(Calendar.SECOND))
+        Log.e("MINUTES", "" + cal.get(Calendar.MINUTE))
+
+
+        val intent = Intent(Context.ALARM_SERVICE)
+        sendBroadcast(intent)
 
 
     }

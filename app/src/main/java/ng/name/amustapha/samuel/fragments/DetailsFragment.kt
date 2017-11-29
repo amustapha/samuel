@@ -61,7 +61,7 @@ class DetailsFragment : DialogFragment() {
             schedulFrag.arguments  = args
             fragmentManager?.beginTransaction()?.replace(R.id.container, schedulFrag)?.commit()
             dialog.dismiss()
-            (activity as MainActivity).softReplace(SchedulesFragment())
+            (activity as MainActivity).softReplace(schedulFrag)
 
         })
 

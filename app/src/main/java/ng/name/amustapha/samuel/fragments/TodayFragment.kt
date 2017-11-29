@@ -32,7 +32,7 @@ class TodayFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val calendar = Calendar.getInstance()
-        val schdls = Schedule.find(Schedule::class.java, " DOM = ? OR DOW = ? OR DATE = ? ", calendar.get(Calendar.DAY_OF_MONTH).toString(), calendar.get(Calendar.DAY_OF_WEEK).toString(), calendar.get(Calendar.DATE).toString())
+        val schdls = Schedule.find(Schedule::class.java, " DOW = ? OR DAY = ? ", calendar.get(Calendar.DAY_OF_WEEK).toString(), calendar.get(Calendar.DAY_OF_MONTH).toString())
         schedules.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
         schedules.adapter = TodayAdapter(fragmentManager, schdls)
     }

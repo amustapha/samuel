@@ -141,6 +141,8 @@ public class SetPasswordFragment extends Fragment implements View.OnClickListene
             message.setText(R.string.pin_set);
             message.setTextColor(Color.GREEN);
             config.set("password", pin[0]);
+            getFragmentManager().beginTransaction().replace(R.id.container, new SigninFragment())
+                    .commit();
 
         }else{
             Animation anim = AnimationUtils.loadAnimation(view.getContext(), R.anim.shake);
